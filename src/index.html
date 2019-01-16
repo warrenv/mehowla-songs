@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      function onLoad() {
+        var sec = parseInt(document.location.search.substr(1));
+
+        if (!isNaN(sec))
+          mainPlayer.currentTime = sec;
+      }
+    </script>
+    <title>Partial Content Demonstration</title>
+  </head>
+  <body>
+    <h3>Partial Content Demonstration</h3>
+    <hr />
+    <audio id="mainPlayer1" controls="controls" onloadedmetadata="onLoad()">
+      <source src="http://localhost:9000/songs/1" />
+    </audio>
+    <audio id="mainPlayer2" controls="controls">
+      <source src="http://localhost:9000/songs/2" />
+    </audio>
+    <audio id="mainPlayer3" controls="controls">
+      <source src="http://localhost:9000/songs/3" />
+    </audio>
+  </body>
+</html>

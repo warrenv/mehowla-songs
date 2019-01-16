@@ -1,0 +1,11 @@
+*.log
+.DS_Store
+.coverage
+.env
+.idea
+.nyc_output
+.vscode
+coverage
+dist
+node_modules
+docker-compose.override.yml
